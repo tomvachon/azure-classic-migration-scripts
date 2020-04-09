@@ -2,6 +2,10 @@
 
 These are helper scripts which assist in Azure Classic to ARM migration prerequisites.
 
+## Warning
+
+These scripts are tested but I cannot promise they will work and/or not be destructive.  You should review anything before you run it.
+
 ### [Migrate-AzureClassic-EndpointACL-to-NSG.ps1](Migrate-AzureClassic-EndpointACL-to-NSG.ps1)
 This script iterates over each VM in your Azure Classic environment and inspects it for any endpoints with ACL's enabled.  
 The script then takes those ACL's and converts them to a net-new Classic NSG rules (one NSG per VM is the max).
